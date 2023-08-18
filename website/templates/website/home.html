@@ -1,0 +1,442 @@
+{% extends 'website_base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'website/js/mdc.textfield.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/js/mdc.button.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-theme owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static 'website/img/carousel-1.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                     style="background: rgba(9,11,23,0.8);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">OnPoint Systems</h5>
+                                <h1 class="display-3 text-white animated slideInDown">
+                                    Website, Application and Software Developers
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">
+                                    OPS is an Eswatini registered software development company. We specialize in the
+                                    development of Websites, mobile and desktop applications. We also host and register
+                                    website domains.
+                                </p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                    Read More
+                                </a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static 'website/img/code.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                     style="background: rgba(9,11,23,0.8);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                                    Custom Applications
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown">
+                                    Custom built scalable software.
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">
+                                    At OnPoint Systems, we create personalized, scalable software that is tailored to
+                                    your specific needs.
+                                    Our team of skilled engineers is equipped with skills to
+                                    design software to meet various commercial objectives and technological goals.
+                                </p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                    Read More
+                                </a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Request
+                                    Quotation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'website/img/logo.svg' %}"
+                             alt="about image" style="object-fit: contain;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to OPS</h1>
+                    <p class="mb-4">
+                        OnPoint Systems is a registered software development company in Eswatini, specializing in the
+                        development of web, mobile and desktop application.
+                        We're a team of experienced professional software developers.
+                    </p>
+                    <p class="mb-4">
+                        We also handle email hosting, domain name registration and hosting. We provide shared and
+                        dedicated
+                        linux
+                        server hosting.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Website development</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Mobile Applications</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Desktop Applications</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Domain registration</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Email hosting</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Website hosting</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Services</h6>
+                    <h1 class="mb-4">Services We Offer</h1>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Web Development</h5>
+                            <p>
+                                We specialize on creating web apps with an optimized, efficient, speedy, and intuitive
+                                user experience. We serve companies of all sizes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Mobile Applications</h5>
+                            <p>
+                                We create applications that help businesses grow revenue, enhance efficiency and
+                                productivity, and enforce market disruption.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">UX/UI Design</h5>
+                            <p>
+                                Our team of experts can design the most effective UI for your app and find the best
+                                approach for it to work on the market.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Cloud Platforms</h5>
+                            <p>
+                                We are a proud Cloud Solutions Provider that specializes in cloud computing-based
+                                services, products, and solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Why chose us -->
+    <div class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Why US</h6>
+                    <h1>Why should you use us</h1>
+                    <h1 class="mb-4">to achieve your development goals?</h1>
+                </div>
+                <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-users text-primary mb-4"></i>
+                            <h5 class="mb-3">Team of experts</h5>
+                            <p>
+                                Our engineers have the knowledge and experience that your projects require.
+                                They have the practical experience to meet any issue and are accredited in all
+                                technologies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-comment text-primary mb-4"></i>
+                            <h5 class="mb-3">Feedback and customer support</h5>
+                            <p>
+                                From daily standups to weekly feedback meetings, progress visibility, time tracking, and
+                                more, we've got you covered. We take pleasure in providing excellent customer service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-star text-primary mb-4"></i>
+                            <h5 class="mb-3">Customized Software</h5>
+                            <p>
+                                We provide customized and personalized cutting-edge software on schedule. Our team of
+                                experts will fulfill all your software needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why chose us end -->
+
+    <!-- Online Registration Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">For Students</h6>
+                    <h1 class="mb-4">Online Applications</h1>
+                    <p class="mb-4">
+                        Are you a student? Applying to the schools registered with us has been made easier.
+                        You can use this platform to apply online to the all the schools that are registered with us.
+                        Make sure your school of interest is available.
+                    </p>
+                    <p class="mb-4">
+                        To apply, just fill in your information and fill in your recent transcript grades.
+                        Make sure your grades match your report, since they will be checked.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100"
+                             src="{% static 'website/img/online_reg.jpg' %}"
+                             alt="about image" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Online Registration End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">We're Experts</h6>
+                <h1 class="mb-5">Meet the Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'website/img/team-1.jpg' %}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="mailto:sfisolindelwa@gamil.com">
+                                    <i class="fa fa-envelope"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Dlamini Lindelwa</h5>
+                            <small>Co-Founder, Full-Stack Engineer & Software Developer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'website/img/team-2.jpg' %}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1"
+                                   href="mailto:sibusisom@onpointsytems.co.za">
+                                    <i class="fa fa-envelope"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Sibusiso Mavuso</h5>
+                            <small>Co-Founder, Software Developer & Systems Administrator</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'website/img/team-3.jpg' %}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Kuhle</h5>
+                            <small>Content Creator, Social Media</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Contact us Form -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-start">
+                <h6 class="section-title bg-white text-start text-primary px-3">
+                    Contact us
+                </h6>
+                <h1 class="mb-5">Get in touch</h1>
+            </div>
+            <form class="row g-4">
+                <div class="col-6">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id">Your Full Name</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id">Your Email</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                    </label>
+                </div>
+                <div class="col-12">
+                    <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter w-100"
+                           data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id">Message</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <span class="mdc-text-field__resizer">
+                        <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40"
+                                  maxlength="140"></textarea>
+                        <span class="mdc-text-field-character-counter">0 / 140</span>
+                      </span>
+                    </label>
+                </div>
+                <div class="col-12">
+                    <div class="mdc-touch-target-wrapper">
+                        <button class="mdc-button mdc-button--touch">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="mdc-button__touch"></span>
+                            <span class="mdc-button__focus-ring"></span>
+                            <span class="mdc-button__label">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Contact us page -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24041.584582542877!2d31.164111779843605!3d-26.39755371842732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8cb7c153833d7%3A0x441eaf71b9c4526a!2sCorner%20Plaza!5e0!3m2!1sen!2s!4v1692398213042!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+{% endblock %}
+
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'website/js/material-components-web.min.js' %}"></script>
+    <script type="text/javascript">
+        mdc.autoInit();
+    </script>
+{% endblock %}
+
+
