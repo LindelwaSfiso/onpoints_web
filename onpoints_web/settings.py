@@ -119,11 +119,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static_root'
+# STATIC_URL = '/static/'
+# STATIC_ROOT = BASE_DIR / 'static_root_onpoint'
 
-# STATIC_URL = '/static_root/'
-# STATIC_ROOT = 'https://onpointsystems.co.za/static_root/'
+STATIC_URL = '/static_root/'
+STATIC_ROOT = 'https://onpointsystems.co.za/static_root_onpoint/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

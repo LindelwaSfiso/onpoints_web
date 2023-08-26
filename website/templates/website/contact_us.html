@@ -1,0 +1,106 @@
+{% extends 'website_base.html' %}
+{% load static %}
+
+{% block title %}OPS | Contact Us{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'website/js/mdc.textfield.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/js/mdc.button.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="container-xxl">
+        <div class="container mt-5">
+            <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Get in touch</h6>
+                <h1 class="mb-4">Contact Us</h1>
+                <p class="mb-4">
+                    We'd love to hear from you if you're seeking for a dependable and professional software development
+                    partner. Contact us today to discuss your project and see how we can assist you in achieving your
+                    software objectives.
+                </p>
+
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Zulwini, Eswatini</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+268 7652 5965</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@onpointsystems.co.za">info@onpointsystems.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact us Form -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-start">
+                <h6 class="section-title bg-white text-start text-primary">Get in touch</h6>
+                <h1 class="mb-5">Send us an email now!</h1>
+            </div>
+            <form class="row g-4">
+                <div class="col-6">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id-name">Your Full Name</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-name">
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id-email">Your Email</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-email">
+                    </label>
+                </div>
+                <div class="col-12">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id-email">Your Email</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-email">
+                    </label>
+                </div>
+                <div class="col-12">
+                    <div class="mdc-touch-target-wrapper">
+                        <button class="mdc-button mdc-button--touch">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="mdc-button__touch"></span>
+                            <span class="mdc-button__focus-ring"></span>
+                            <span class="mdc-button__label">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Contact us page -->
+
+
+    <iframe class="wow fadeInUp" data-wow-delay="0.5s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24041.584582542877!2d31.164111779843605!3d-26.39755371842732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8cb7c153833d7%3A0x441eaf71b9c4526a!2sCorner%20Plaza!5e0!3m2!1sen!2s!4v1692398213042!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+{% endblock %}
+
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'website/js/material-components-web.min.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            mdc.autoInit();
+        })
+    </script>
+{% endblock %}

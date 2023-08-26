@@ -10,9 +10,17 @@ def home(request):
     return render(request, 'website/home.html', {})
 
 
+def software(request):
+    return render(request, 'website/software.html', {})
+
+
 def about_us(request):
     """
     View to display about page.
     Include all information about OPS here.
     """
     return render(request, 'website/about_us.html', {})
+
+
+def contact_us(request):
+    return render(request, 'website/contact_us.html', {})

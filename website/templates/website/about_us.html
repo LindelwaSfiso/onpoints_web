@@ -1,22 +1,140 @@
 {% extends 'website_base.html' %}
 {% load static %}
 
-{% block title %}SMS| About OPS{% endblock %}
+{% block title %}OPS| About OPS{% endblock %}
 
+{% block css %}
+    <style>
+        .title-soft {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}
 
 {% block content %}
+    <div class="container-xxl">
+        <div class="container mt-5">
+            <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                <h1 class="mb-4">About OnPointSystems</h1>
+                <p class="mb-4">
+                    At OnPointSystems, we are passionate about developing creative software solutions that enable
+                    organizations and
+                    individuals to succeed in the digital age. With an entire team of highly qualified and experienced
+                    software
+                    engineers, we specialize in producing cutting-edge software products tailored to our clients'
+                    specific demands.
+                </p>
+
+                <p class="mb-5">
+                    With an in-depth understanding of the latest innovations and industry best practices, our team of
+                    software engineers offers a diversified skill set which enables us to tackle even the most
+                    complicated software development projects. We have the experience to transform your ideas into
+                    reality, from web applications to mobile apps. We stay up-to- date on the newest trends and
+                    advancements in the software development space to ensure that our clients receive the most inventive
+                    and efficient solutions.
+                </p>
+
+                <h6 class="section-title bg-white text-start text-primary pe-3">Values</h6>
+                <h1 class="mb-4">Our Values</h1>
+                <p class="mb-4">
+                    At OnPointSystems, we strive for excellence in all we do. Our core values guide our work and
+                    interactions with clients:
+                </p>
+                <ul>
+                    <li>
+                        Quality: We are devoted to providing high-quality software solutions that fulfill the most
+                        stringent
+                        performance, reliability, and security requirements.
+                        We value innovation and are always striving to push the boundaries of what is possible in
+                        software
+                        development. We are always researching new technologies and processes in order to provide
+                        cutting-edge solutions.
+                    </li>
+                    <li>
+                        Innovation: We value innovation and are always striving to push the boundaries of what is
+                        possible in software development. We are always researching new technologies and processes in
+                        order to provide cutting-edge solutions.
+                    </li>
+                    <li>
+                        Collaboration: We believe in the value of cooperation and work closely with our clients to
+                        understand their specific needs and objectives. Throughout the development process, we place a
+                        premium on open communication and openness.
+                    </li>
+                    <li>
+                        Customer satisfaction: Our main aim is customer pleasure. We go above and beyond to meet and
+                        exceed
+                        client expectations with our software solutions. We are committed to establishing long-term
+                        relationships based on mutual success and trust.
+                    </li>
+                </ul>
+
+
+                <h6 class="section-title bg-white text-start text-primary pe-3 mt-5">Design Process</h6>
+                <h1 class="mb-4">Our Design Process</h1>
+                <p class="mb-4">
+                    At OnPointSystems, we adhere to a tried-and-true design methodology that assures our clients'
+                    success. The following are the steps in our design process:
+                </p>
+                <h4 class="mb-4 title-soft">Step 1: Discovery</h4>
+                <ul>
+                    <li>Purpose: Understand the client's needs, goals, and target audience.</li>
+                    <li>Tools and techniques: Stakeholder interviews, user research, competitive analysis.</li>
+                    <li>Expected outcomes: A clear understanding of the project requirements and objectives.</li>
+                </ul>
+
+                <h4 class="mb-4 title-soft">Step 2: Wireframing</h4>
+                <ul>
+                    <li>Purpose: Create a visual representation of the website or application's layout and structure.</li>
+                    <li>Tools and techniques: Sketching, prototyping, user testing.</li>
+                    <li>Expected outcomes: A clear and intuitive user interface design.</li>
+                </ul>
+
+                <h4 class="mb-4 title-soft">Step 3: Design</h4>
+                <ul>
+                    <li>Purpose: Create high-fidelity designs that reflect the client's brand and meet the project requirements.</li>
+                    <li>Tools and techniques: Adobe Creative Suite, Sketch, Figma.</li>
+                    <li>Expected outcomes: A visually appealing and functional design.</li>
+                </ul>
+
+                <h4 class="mb-4 title-soft">Step 4: Development</h4>
+                <ul>
+                    <li>Purpose: Build the website or application using the latest technologies and best practices.</li>
+                    <li>Tools and techniques: HTML, CSS, JavaScript, React, Node.js, Express.js, Python/Django, Next.js, Laravel, PHP, MySQL, PostgreSQL, APIs</li>
+                    <li>Expected outcomes: A fully functional and responsive website or application.</li>
+                </ul>
+
+                <h4 class="mb-4 title-soft">Step 5: Testing</h4>
+                <ul>
+                    <li>Purpose: Thoroughly test the website or application to ensure it meets the project requirements and functions properly.</li>
+                    <li>Tools and techniques: Manual testing, automated testing, user testing.</li>
+                    <li>Expected outcomes: A bug-free and reliable website or application.</li>
+                </ul>
+
+                <h4 class="mb-4 title-soft">Step 6: Launch</h4>
+                <ul>
+                    <li>Purpose: Deploy the website or application to the production environment and make it live.</li>
+                    <li>Tools and techniques: Hosting, domain registration, DNS configuration.</li>
+                    <li>Expected outcomes: A successful launch and deployment.</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/logo.jpg' %}"
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'website/img/programming.jpg' %}"
                              alt="about image" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Hi there</h6>
                     <h1 class="mb-4">Welcome to OPS</h1>
                     <p class="mb-4">
                         OnPoint Systems is a registered software development company in Eswatini, specializing in the

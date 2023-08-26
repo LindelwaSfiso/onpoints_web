@@ -12,15 +12,15 @@
     <div class="container-fluid p-0 mb-5">
         <div class="owl-theme owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="{% static 'website/img/carousel-1.jpg' %}" alt="">
+                <img class="img-fluid" src="{% static 'website/img/computer.jpg' %}" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                      style="background: rgba(9,11,23,0.8);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">OnPoint Systems</h5>
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown" style="color: #aeb5f2!important;">OnPoint Systems</h5>
                                 <h1 class="display-3 text-white animated slideInDown">
-                                    Website, Application and Software Developers
+                                    Website, Applications and Software Developers
                                 </h1>
                                 <p class="fs-5 text-white mb-4 pb-2">
                                     OPS is an Eswatini registered software development company. We specialize in the
@@ -43,7 +43,7 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown" style="color: #aeb5f2!important;">
                                     Custom Applications
                                 </h5>
                                 <h1 class="display-3 text-white animated slideInDown">
@@ -113,7 +113,7 @@
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Website hosting</p>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="{% url 'website:about_us' %}">Read More</a>
                 </div>
             </div>
         </div>
@@ -234,55 +234,36 @@
     </div>
     <!-- Why chose us end -->
 
-    <!-- Online Registration Start -->
+    <!-- More about us Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">For Students</h6>
-                    <h1 class="mb-4">Online Applications</h1>
+                    <h6 class="section-title bg-white text-start text-primary pe-3">What we offer</h6>
+                    <h1 class="mb-4">Solutions to fulfill your business objectives</h1>
                     <p class="mb-4">
-                        Are you a student? Applying to the schools registered with us has been made easier.
-                        You can use this platform to apply online to the all the schools that are registered with us.
-                        Make sure your school of interest is available.
+                        Our professionals advise, design, and execute solutions that help businesses reach their
+                        objectives through modern strategies and a focus to reducing technical difficulties throughout
+                        the development cycle. As a dependable software partner, we make an effort to find and develop
+                        technological solutions that enable organizations to thrive.
                     </p>
                     <p class="mb-4">
-                        To apply, just fill in your information and fill in your recent transcript grades.
-                        Make sure your grades match your report, since they will be checked.
+                        We handle anything from basic apps, websites, mobile applications, desktop applications, cloud
+                        services, and full-fledged automated embedded systems.
                     </p>
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="{% url 'website:about_us' %}">Read More</a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-absolute w-100 h-100"
-                             src="{% static 'website/img/online_reg.jpg' %}"
+                             src="{% static 'website/img/computer_coding.jpg' %}"
                              alt="about image" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Online Registration End -->
+    <!-- More about us End -->
 
 
     <!-- Team Start -->
@@ -296,7 +277,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{% static 'website/img/team-1.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'website/img/lindelwa_dlamini.png' %}" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -316,7 +297,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{% static 'website/img/team-2.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'website/img/sibusiso_mavuso.jpg' %}" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -337,7 +318,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{% static 'website/img/team-3.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'website/img/team-4.jpg' %}" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -348,7 +329,7 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Kuhle</h5>
+                            <h5 class="mb-0">Kuhle Hlophe</h5>
                             <small>Content Creator, Social Media</small>
                         </div>
                     </div>
@@ -363,9 +344,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-start">
-                <h6 class="section-title bg-white text-start text-primary px-3">
-                    Contact us
-                </h6>
+                <h6 class="section-title bg-white text-start text-primary">Contact us</h6>
                 <h1 class="mb-5">Get in touch</h1>
             </div>
             <form class="row g-4">
@@ -374,11 +353,11 @@
                       <span class="mdc-notched-outline">
                         <span class="mdc-notched-outline__leading"></span>
                         <span class="mdc-notched-outline__notch">
-                          <span class="mdc-floating-label" id="my-label-id">Your Full Name</span>
+                          <span class="mdc-floating-label" id="my-label-id-name">Your Full Name</span>
                         </span>
                         <span class="mdc-notched-outline__trailing"></span>
                       </span>
-                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-name">
                     </label>
                 </div>
                 <div class="col-6">
@@ -386,28 +365,23 @@
                       <span class="mdc-notched-outline">
                         <span class="mdc-notched-outline__leading"></span>
                         <span class="mdc-notched-outline__notch">
-                          <span class="mdc-floating-label" id="my-label-id">Your Email</span>
+                          <span class="mdc-floating-label" id="my-label-id-email">Your Email</span>
                         </span>
                         <span class="mdc-notched-outline__trailing"></span>
                       </span>
-                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-email">
                     </label>
                 </div>
                 <div class="col-12">
-                    <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter w-100"
-                           data-mdc-auto-init="MDCTextField">
+                    <label class="mdc-text-field mdc-text-field--outlined w-100" data-mdc-auto-init="MDCTextField">
                       <span class="mdc-notched-outline">
                         <span class="mdc-notched-outline__leading"></span>
                         <span class="mdc-notched-outline__notch">
-                          <span class="mdc-floating-label" id="my-label-id">Message</span>
+                          <span class="mdc-floating-label" id="my-label-id-email">Your Email</span>
                         </span>
                         <span class="mdc-notched-outline__trailing"></span>
                       </span>
-                        <span class="mdc-text-field__resizer">
-                        <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40"
-                                  maxlength="140"></textarea>
-                        <span class="mdc-text-field-character-counter">0 / 140</span>
-                      </span>
+                        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id-email">
                     </label>
                 </div>
                 <div class="col-12">
@@ -435,7 +409,9 @@
 {% block js %}
     <script type="text/javascript" src="{% static 'website/js/material-components-web.min.js' %}"></script>
     <script type="text/javascript">
-        mdc.autoInit();
+        $(document).ready(function () {
+            mdc.autoInit();
+        })
     </script>
 {% endblock %}
 
